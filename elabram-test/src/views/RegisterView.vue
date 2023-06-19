@@ -4,6 +4,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
     <div class="flex">
+
+        <!-- LEFT DIV -->
         <div class="w-1/3 bg-primary-600 relative justify-center items-center -z-20">
             <div class="flex justify-center w-full">
                 <p class="absolute top-36 text-white xl:text-5xl text-4xl font-bold px-10 text-center">A few clicks away
@@ -19,7 +21,53 @@ import { RouterLink, RouterView } from 'vue-router'
             </div>
         </div>
 
-        <div class="bg-white w-2/3 border border-primary-border">
+        <!-- RIGHT DIV 2-->
+        <div class=" bg-gray-500 w-2/3 h-screen border border-primary-border">
+            <div class=" h-4/5 flex flex-col p-12 2xl:p-36 relative top-1/2 transform -translate-y-1/2">
+                <div class="h-1/4">
+                    <img src="../assets/axdif-logo.svg" class=" w-48 mb-10" />
+                </div>
+                <div class="h-3/4 flex flex-col bg-green-500 font-bold">
+                    <div class="h-1/3 bg-yellow-500 flex flex-row items-center">
+                        <img src="../assets//img-1.svg" />
+                        <div class="flex flex-col">
+                            <span class="text-left ml-2">Verify your account</span>
+                            <span class="text-left ml-2 font-normal text-sm">A verification link has been sent to your email
+                                account</span>
+                        </div>
+                        <div class="w-1/2"></div>
+                    </div>
+                    <div class="h-1/3 bg-yellow-500 flex flex-row items-center">
+                        <div class="w-1/4 bg-red-300">x</div>
+                        <img src="../assets//img-2.svg" />
+                        <div class="flex flex-col">
+                            <span class="text-left ml-2">Verify your account</span>
+                            <span class="text-left ml-2 font-normal text-sm">A verification link has been sent to your email
+                                account</span>
+                        </div>
+                        <div class="w-1/4 bg-red-300">x2</div>
+                    </div>
+                    <div class="h-1/3 bg-yellow-500 flex flex-row items-center">
+                        <div class="w-1/4 bg-red-300">x</div>
+                        <div class="w-1/4 bg-red-300">x2</div>
+                        <img src="../assets//img-3.svg" />
+                        <div class="flex flex-col">
+                            <span class="text-left ml-2">Verify your account</span>
+                            <span class="text-left ml-2 font-normal text-sm">A verification link has been sent to your email
+                                account</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-start w-full pl-12">
+                <a href="#" class="absolute bottom-2 text-primary-300">© Copyright 2023. All Right Reserved.</a>
+            </div>
+
+        </div>
+
+        <!-- RIGHT DIV -->
+        <!-- <div class="bg-white w-2/3 border border-primary-border">
             <div class="flex flex-col p-12 2xl:p-36 relative top-1/2 transform -translate-y-1/2">
                 <img src="../assets/axdif-logo.svg" class=" w-48 mb-10" />
                 <h1 class="text-3xl text-primary-900 my-2"><b>Manage all your employee efficiently</b></h1>
@@ -75,7 +123,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 <a href="#" class="absolute bottom-2 text-primary-300">© Copyright 2023. All Right Reserved.</a>
             </div>
 
-        </div>
+        </div> -->
     </div>
 </template>
 
