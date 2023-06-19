@@ -1,9 +1,14 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<script>
+import LoginRegisterHeader from '../components/LoginRegisterHeader.vue';
 </script>
 
 <template>
+  <Header>
+    <LoginRegisterHeader />
+  </Header>
   <main>
-    <TheWelcome />
+    <h1 class=" bg-black text-white">
+      TESTING
+    </h1>
   </main>
 </template>
