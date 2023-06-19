@@ -1,5 +1,8 @@
 <script>
 
+export default {
+
+}
 </script>
 
 <template>
@@ -46,7 +49,9 @@
                     </label>
                     <a href="#" class="text-primary-600 font-bold hover:text-primary-900-08539a">Forgot password?</a>
                 </div>
-                <button class=" bg-primary-orange text-white rounded-md h-10 w-full my-2">Log In</button>
+                <button class=" bg-primary-orange hover:bg-orange-800 text-white rounded-md h-10 w-full my-2">
+                    
+                    Log In</button>
             </div>
             <div class="flex justify-center w-full">
                 <a href="#" class="absolute bottom-2 text-primary-300">Privacy Policy • Terms & Condition</a>
@@ -55,4 +60,3 @@
         </div>
     </div>
 </template>
-
