@@ -25,6 +25,8 @@ module.exports = {
         'primary-900-08539a': '#08539A',
         'primary-600': '#0796E5',
         'primary-border': '#707070',
+        'primary-132': "#132662",
+        'primary-orange': "#EC4B5A",
       }
     }
   },
