@@ -3,10 +3,10 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-    <div class="flex">
+    <div class="flex items-center justify-center">
 
         <!-- LEFT DIV -->
-        <div class="w-1/3 bg-primary-600 relative justify-center items-center -z-20">
+        <div class="w-full h-full lg:w-1/3 bg-primary-600 relative justify-center items-center -z-20">
             <div class="flex justify-center w-full">
                 <p class="absolute top-36 text-white xl:text-5xl text-4xl font-bold px-10 text-center">A few clicks away
                     from being a part of Axdif</p>
@@ -22,15 +22,15 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
 
         <!-- RIGHT DIV 2-->
-        <div class=" bg-gray-500 w-2/3 h-screen border border-primary-border">
+        <!-- <div class=" bg-gray-500 h-4/5 w-4/5 mx-12 my-12 lg:my-0 lg:mx-0 lg:w-2/3 lg:h-screen border border-primary-border container absolute lg:relative">
             <div class=" h-4/5 flex flex-col p-12 2xl:p-36 relative top-1/2 transform -translate-y-1/2">
                 <div class="h-1/4">
                     <img src="../assets/axdif-logo.svg" class=" w-48 mb-10" />
                 </div>
                 <div class="h-3/4 flex flex-col bg-green-500 font-bold">
                     <div class="h-1/3 bg-yellow-500 flex flex-row items-center">
-                        <img src="../assets//img-1.svg" />
-                        <div class="flex flex-col">
+                        <img src="../assets//img-1.svg" class="w-1/4"/>
+                        <div class="flex flex-col w-1/4">
                             <span class="text-left ml-2">Verify your account</span>
                             <span class="text-left ml-2 font-normal text-sm">A verification link has been sent to your email
                                 account</span>
@@ -38,7 +38,7 @@ import { RouterLink, RouterView } from 'vue-router'
                         <div class="w-1/2"></div>
                     </div>
                     <div class="h-1/3 bg-yellow-500 flex flex-row items-center">
-                        <div class="w-1/4 bg-red-300">x</div>
+                        <div class="w-1/4 h-full relative transform left-1/4 -translate-x-1/2"><p class="w-1/2 h-1/2 border-l border-b border-black">x</p></div>
                         <img src="../assets//img-2.svg" />
                         <div class="flex flex-col">
                             <span class="text-left ml-2">Verify your account</span>
@@ -64,39 +64,39 @@ import { RouterLink, RouterView } from 'vue-router'
                 <a href="#" class="absolute bottom-2 text-primary-300">© Copyright 2023. All Right Reserved.</a>
             </div>
 
-        </div>
+        </div> -->
 
         <!-- RIGHT DIV -->
-        <!-- <div class="bg-white w-2/3 border border-primary-border">
-            <div class="flex flex-col p-12 2xl:p-36 relative top-1/2 transform -translate-y-1/2">
-                <img src="../assets/axdif-logo.svg" class=" w-48 mb-10" />
+        <div class=" bg-gray-500 h-4/5 w-11/12 my-12 lg:my-0 lg:mx-0 lg:w-2/3 lg:h-screen border border-primary-border rounded-lg lg:rounded-none container object-contain overflow-auto absolute lg:relative">
+            <div class="flex flex-col p-2 lg:p-12 2xl:p-36 relative top-1/2 transform -translate-y-1/2">
+                <img src="../assets/axdif-logo.svg" class="w-48 mb-10" />
                 <h1 class="text-3xl text-primary-900 my-2"><b>Manage all your employee efficiently</b></h1>
                 <h1 class="text-xl text-primary-900 my-2">Let’s get you all set up so you can verify your personal account
                     and begin setting up your profile</h1>
 
-                <div class="flex justify-evenly">
+                <div class="lg:flex justify-evenly">
                     <div class="w-full mr-2">
                         <h1 class="font-bold my-2">Company Name</h1>
-                        <input type="text" placeholder="e.g John" class="border border-primary-200 rounder-sm w-full" />
+                        <input type="text" placeholder="e.g John" class="border border-primary-200 h-9 rounded-md w-full" />
                         <h1 class="font-bold my-2">Email</h1>
                         <input type="email" placeholder="e.g john.doe@mail.com"
-                            class="border border-primary-200 rounder-sm w-full" />
+                            class="border border-primary-200 h-9 rounded-md w-full" />
                         <h1 class="font-bold my-2">Password</h1>
-                        <input type="password" placeholder="*******" class="border border-primary-200 rounder-sm w-full" />
+                        <input type="password" placeholder="*******" class="border border-primary-200 h-9 rounded-md w-full" />
                     </div>
 
-                    <div class="w-full ml-2">
+                    <div class="w-full lg:ml-2">
                         <h1 class="font-bold my-2">Fullname</h1>
-                        <input type="text" placeholder="e.g Doe" class="border border-primary-200 rounder-sm w-full" />
+                        <input type="text" placeholder="e.g Doe" class="border border-primary-200 h-9 rounded-md w-full" />
                         <h1 class="font-bold my-2">Phone Number (Optional)</h1>
                             <div class="flex">
                                 <input type="number" placeholder="Country Code"
-                                    class="border border-primary-200 rounder-sm w-1/3 mr-1" />
+                                    class="border border-primary-200 h-9 rounded-md w-1/3 mr-1" />
                                 <input type="number" placeholder="e.g 8212345678"
-                                    class="border border-primary-200 rounder-sm w-2/3 ml-1" />
+                                    class="border border-primary-200 h-9 rounded-md w-2/3 ml-1" />
                             </div>
                         <h1 class="font-bold my-2">Confirm Password</h1>
-                        <input type="password" placeholder="*******" class="border border-primary-200 rounder-sm w-full" />
+                        <input type="password" placeholder="*******" class="border border-primary-200 h-9 rounded-md w-full" />
                     </div>
                 </div>
 
@@ -123,7 +123,7 @@ import { RouterLink, RouterView } from 'vue-router'
                 <a href="#" class="absolute bottom-2 text-primary-300">© Copyright 2023. All Right Reserved.</a>
             </div>
 
-        </div> -->
+        </div>
     </div>
 </template>
 
