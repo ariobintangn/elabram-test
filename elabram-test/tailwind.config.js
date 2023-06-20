@@ -30,6 +30,7 @@ module.exports = {
         'primary-border': '#707070',
         'primary-132': "#132662",
         'primary-orange': "#EC4B5A",
+        'primary-gray': "#6E7DA5"
       }
     }
   },

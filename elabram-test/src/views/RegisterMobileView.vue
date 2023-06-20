@@ -3,8 +3,8 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-    <div class="flex lg:flex-row flex-col  items-center justify-center">
-        <div class="flex bg-white z-10 h-20 w-full lg:hidden sticky top-0">
+    <div class="flex lg:flex-row flex-col  items-center justify-center h-[920px]">
+        <div class="flex bg-white z-10 h-20 py-2 w-full lg:hidden sticky top-0">
             <img src="../assets/axdif-logo.svg" class="w-36 z-10" />
         </div>
         <!-- LEFT DIV -->
@@ -21,19 +21,35 @@ import { RouterLink, RouterView } from 'vue-router'
                 <p class="text-white text-md px-12 xl:px-16 text-center">Connect with your coworkers anywhere like you are
                     in one workspace. Very simple and fast.</p>
             </div>
-            <div class="bg-white mt-36 mx-[16px] rounded-md">
-                <h1>TESTING</h1>
-                <img src="../assets/img-1.svg"/>
-                <img src="../assets/img-2.svg"/>
-                <img src="../assets/img-3.svg"/>
+            <div class="flex flex-col bg-white mt-24 mx-[16px] mb-12 rounded-md justify-center items-center">
+                <div class="flex flex-col justify-center items-center text-center mx-[88px] pt-[18px]">
+                    <img src="../assets/img-1.svg" class="h-[57px] mb-[8px]" />
+                    <span class="font-bold mb-[6.5px] ">Verify your account</span>
+                    <span class="text-xs text-primary-gray">A verification link has been sent to your email account.</span>
+                    <img src="../assets/dashed-line-2.png" class="h-12 mt-1" />
+                </div>
+                <div class="flex flex-col justify-center items-center text-center mx-[88px] pt-[18px]">
+                    <img src="../assets/img-3.svg" class="h-[57px] mb-[8px]" />
+                    <span class="font-bold mb-[6.5px] ">Verify your account</span>
+                    <span class="text-xs text-primary-gray">A verification link has been sent to your email account.</span>
+                    <img src="../assets/dashed-line-2.png" class="h-12 mb-2 mt-1" />
+                </div>
+                <div class="flex flex-col justify-center items-center text-center mx-[88px] pt-[18px]">
+                    <img src="../assets/img-2.svg" class="h-[57px] mb-[8px]" />
+                    <span class="font-bold mb-[6.5px] ">Login to your account</span>
+                    <span class="text-xs text-primary-gray">Login your WMS account</span>
+                    <button class=" bg-primary-orange hover:bg-orange-800 text-white rounded-md h-10 w-full my-[28px]">
+    
+                        Login To Axdif</button>
+                </div>
+            </div>
+            <div class="flex justify-center w-full">
+                <a href="#" class=" bottom-2 text-white text-sm">© Copyright 2023. All Right Reserved.</a>
             </div>
         </div>
 
         <!-- RIGHT DIV 2-->
 
-        <div class="flex justify-center w-full">
-            <a href="#" class="absolute bottom-2 text-primary-300">© Copyright 2023. All Right Reserved.</a>
-        </div>
 
         <!-- RIGHT DIV -->
         <!-- <div class="flex flex-col bg-gray-500 h-auto max-h-full w-11/12 mt-48 lg:mt-0 lg:my-0 lg:mx-0 lg:w-2/3 lg:h-screen border border-primary-border rounded-lg lg:rounded-none container object-contain overflow-auto absolute lg:relative">

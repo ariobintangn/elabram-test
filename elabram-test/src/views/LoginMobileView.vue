@@ -17,7 +17,7 @@ export default {
         <div
             class="h-5/6 container lg:h-full lg:my-0  lg:mx-0 lg:relative lg:w-1/3 lg:border border-primary-border lg:bg-white">
             <div class="flex flex-col px-[16px] lg:px-[69px] relative md:p-24 lg:top-1/2 lg:transform lg:-translate-y-1/2">
-                <img src="../assets/axdif-logo.svg" class="lg:block w-36 lg:w-48 mb-10" />
+                <img src="../assets/axdif-logo.svg" class="lg:block w-36 lg:w-48 mb-10 mt-[24px]" />
                 <h1 class="text-xl lg:text-3xl text-primary-900 my-2"><b>Login to your Account</b></h1>
                 <h1 class="lg:text-xl text-primary-900 my-2">Hi, welcome back! Select method to login</h1>
                 <div class="flex flex-col lg:flex-row justify-center my-2 w-full">
@@ -40,10 +40,13 @@ export default {
                 </div>
 
                 <h1 class="font-bold my-[6px]">Email</h1>
-                <input type="email" placeholder="e.g john.doe@mail.com" class="h-10 border border-primary-200 rounded-lg py-[10px] pl-[12px]" />
+                <input type="email" placeholder="e.g john.doe@mail.com"
+                    class="h-[37px] border border-primary-200 rounded-lg py-[10px] pl-[12px]" />
                 <h1 class="font-bold mb-[6px] mt-[12px]">Password</h1>
-                <input type="password" placeholder="Insert Password" class="h-10 border border-primary-200 rounded-lg py-[10px] pl-[12px]" />
-                <img src="../assets/hide-show.svg" class="h-[29px]"/>
+                <div class="flex justify-between h-[37px] border border-primary-200 rounded-lg py-[10px] pl-[12px] items-center" >
+                    <input type="password" placeholder="Insert Password" class=""/>
+                    <img src="../assets/hide-show.svg" class="h-[17px] m-[12px]" />
+                </div>
                 <div class="flex items-center justify-between my-2 text-xs md:text-md">
                     <label class="flex items-center">
                         <input type="checkbox" class="form-checkbox h-4 w-4 text-primary-600" />
@@ -60,8 +63,8 @@ export default {
             </div>
 
             <div class="flex justify-center w-full">
-                <p class="lg:hidden bottom-2 text-primary-900 font-bold text-sm lg:text-md">© Copyright 2023. All Right Reserved.</p>
+                <p class="lg:hidden bottom-2 text-primary-900 font-bold text-sm lg:text-md">© Copyright 2023. All Right
+                    Reserved.</p>
             </div>
         </div>
-    </div>
-</template>
+    </div></template>

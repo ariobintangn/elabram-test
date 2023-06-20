@@ -42,7 +42,7 @@ export default {
                 <h1 class="font-bold my-2">Email</h1>
                 <input type="email" placeholder="e.g john.doe@mail.com" class="h-10 border border-primary-200 rounded-lg" />
                 <h1 class="font-bold my-2">Password</h1>
-                <input type="password" placeholder="*******" class="h-10 border border-primary-200 rounded-lg" />
+                <input type="password" placeholder="Insert Password" class="h-10 border border-primary-200 rounded-lg" />
                 <div class="flex items-center justify-between my-2">
                     <label class="flex items-center">
                         <input type="checkbox" class="form-checkbox h-4 w-4 text-primary-600" />
