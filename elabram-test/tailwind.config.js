@@ -4,7 +4,9 @@ module.exports = {
     './src/App.vue',
     './src/views/HomeView.vue',
     './src/views/LoginView.vue',
+    './src/views/LoginMobileView.vue',
     './src/views/RegisterView.vue',
+    './src/views/RegisterMobileView.vue',
     './src/components/LoginRegisterHeader.vue'
   ],
   theme: {
