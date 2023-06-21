@@ -7,7 +7,9 @@ module.exports = {
     './src/views/LoginMobileView.vue',
     './src/views/RegisterView.vue',
     './src/views/RegisterMobileView.vue',
-    './src/components/LoginRegisterHeader.vue'
+    './src/components/LoginRegisterHeader.vue',
+    './src/components/HomeHeader.vue',
+    './src/components/HomeProfile.vue',
   ],
   theme: {
     extend: {
@@ -15,7 +17,7 @@ module.exports = {
         'warning-red': '#FF2442',
         'warning-green': '#09A262',
         'primary-50': '#E1F4FE',
-        'primary-50-e2e4eb': '#E2E4EB',
+        'primary-border': '#E2E4EB',
         'primary-300': '#5B6591',
         "error": '#E53935',
         'secondary-orange-600': '#F15D2B',
@@ -27,10 +29,11 @@ module.exports = {
         'primary-500': '#04A5F4',
         'primary-900-08539a': '#08539A',
         'primary-600': '#0796E5',
-        'primary-border': '#707070',
         'primary-132': "#132662",
         'primary-orange': "#EC4B5A",
-        'primary-gray': "#6E7DA5"
+        'primary-gray': "#6E7DA5",
+        'primary-gray-2': "#F9F9F9",
+        'primary-gray-3': "#808D93",
       }
     }
   },

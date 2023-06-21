@@ -1,14 +1,19 @@
 <script>
 import LoginRegisterHeader from '../components/LoginRegisterHeader.vue';
+import HomeHeader from '../components/HomeHeader.vue';
+import HomeProfile from '../components/HomeProfile.vue';
+
+export default {
+  components: {
+    HomeHeader,
+    HomeProfile
+  },
+};
 </script>
 
 <template>
-  <Header>
-    <LoginRegisterHeader />
-  </Header>
-  <main>
-    <h1 class=" bg-black text-white">
-      TESTING
-    </h1>
+  <HomeHeader />
+  <main class="px-[16px] bg-primary-gray-2 my-[16px]">
+    <HomeProfile />
   </main>
 </template>
