@@ -6,3 +6,4 @@
 
 - I am trying my best to follow the slicing on Adobe XD
 - I have put the color palette accordingly on my tailwind.config.js
+- I have tried to optimize the reactive design, but the optimal size to view the app is on Mobile M (375px) and Laptop (1024px)
