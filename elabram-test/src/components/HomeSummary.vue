@@ -18,21 +18,21 @@ export default {
         <div class="flex flex-row justfify-between">
             <div class="mr-[5.5px]">
                 <div
-                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
+                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-left border border-primary-border shadow-sm rounded-md">
                     <div class="flex flex-col justify-between">
                         <h1 class="text-primary-gray-3 text-sm mb-[12px]">Working Day(s)</h1>
                         <h1 class="text-black font-bold">2 Day(s)</h1>
                     </div>
                 </div>
                 <div
-                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
+                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-left border border-primary-border shadow-sm rounded-md">
                     <div class="flex flex-col justify-between">
                         <h1 class="text-primary-gray-3 text-sm mb-[12px]">Working Hour(s)</h1>
                         <h1 class="text-black font-bold">13 hr 14 min</h1>
                     </div>
                 </div>
                 <div
-                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
+                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-left border border-primary-border shadow-sm rounded-md">
                     <div class="flex flex-col justify-between">
                         <h1 class="text-primary-gray-3 text-sm mb-[12px]">Exc. Attendance</h1>
                         <h1 class="text-black font-bold">0 Day(s)</h1>
@@ -41,21 +41,21 @@ export default {
             </div>
             <div class="ml-[5.5px]">
                 <div
-                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
+                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-left border border-primary-border shadow-sm rounded-md">
                     <div class="flex flex-col justify-between">
                         <h1 class="text-primary-gray-3 text-sm mb-[12px]">Leave Taken</h1>
                         <h1 class="text-black font-bold">0 Day(s)</h1>
                     </div>
                 </div>
                 <div
-                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
+                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-left border border-primary-border shadow-sm rounded-md">
                     <div class="flex flex-col justify-between">
                         <h1 class="text-primary-gray-3 text-sm mb-[12px]">Overtime</h1>
                         <h1 class="text-black font-bold">00 hr 00 min</h1>
                     </div>
                 </div>
                 <div
-                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
+                    class="h-[91px] w-[150px] p-[20px] my-[12px] bg-white flex flex-col items-left border border-primary-border shadow-sm rounded-md">
                     <div class="flex flex-col justify-between">
                         <h1 class="text-primary-gray-3 text-sm mb-[12px]">Claim</h1>
                         <h1 class="text-black font-bold">IDR 0</h1>

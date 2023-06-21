@@ -19,7 +19,7 @@ export default {
         <div class="flex flex-row font-bold" @click="toggleDropdown">
             <h1>Overview</h1>
             <img src="../assets/home/search-24px (1)-2.svg" class="ml-[4px]" />
-            <div v-if="isDropdownOpen" class="absolute translate-y-4 bg-white rounded-md shadow-lg mt-2">
+            <div v-if="isDropdownOpen" class="absolute translate-y-4 bg-primary-gray-2 rounded-md shadow-lg mt-2">
                 <ul>
                     <li>
                         <a href="#">Overview</a>

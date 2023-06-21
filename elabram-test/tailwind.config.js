@@ -11,12 +11,15 @@ module.exports = {
     './src/components/HomeHeader.vue',
     './src/components/HomeProfile.vue',
     './src/components/HomeSummary.vue',
+    './src/components/HomeAttendance.vue',
+    './src/components/HomeTaskDueSoon.vue',
   ],
   theme: {
     extend: {
       colors: {
         'warning-red': '#FF2442',
         'warning-green': '#09A262',
+        'warning-green-2': '#09A2621F',
         'primary-50': '#E1F4FE',
         'primary-border': '#E2E4EB',
         'primary-300': '#5B6591',
