@@ -10,6 +10,7 @@ module.exports = {
     './src/components/LoginRegisterHeader.vue',
     './src/components/HomeHeader.vue',
     './src/components/HomeProfile.vue',
+    './src/components/HomeSummary.vue',
   ],
   theme: {
     extend: {
