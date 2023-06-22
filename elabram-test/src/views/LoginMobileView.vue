@@ -56,7 +56,7 @@ export default {
                 </div>
                 <button class=" bg-primary-orange hover:bg-orange-800 text-white rounded-md h-10 w-full my-2">
 
-                    Log In</button>
+                    <router-link to="/">Login</router-link></button>
             </div>
             <div class="flex justify-center w-full">
                 <a href="#" class="md:bottom-2 text-primary-300 -mt-10 mb-12">Privacy Policy • Terms & Condition</a>
