@@ -1,6 +1,11 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import RegisterInputBoxSmall from '../components/RegisterInputBoxSmall.vue'
+import RegisterLeftSide from '../components/RegisterLeftSide.vue'
 export default {
+    components: {
+        RegisterInputBoxSmall,
+        RegisterLeftSide,
+    },
     data() {
         return {
             verification: false
@@ -10,7 +15,7 @@ export default {
         toggleVerification() {
             this.verification = !this.verification;
         }
-    },computed: {
+    }, computed: {
         isLg() {
             return window.innerWidth >= 1024;
         },
@@ -19,13 +24,10 @@ export default {
 </script>
 
 <template>
-   <div class="h-[70px] p-[16px]">
-    <img src="../assets/axdif-logo.svg" class="h-[40px]">
-   </div>
-   <div class="bg-primary-600">
-        <div class="mx-[16px] pt-[40px] pb-[29px] text-3xl font-bold text-white text-center">A few clicks away from being a part of Axdif</div>
-        <div class="h-[796px] bg-white mx-[16px] rounded-lg lg:rounded-none"></div>
-        <div>© Copyright 2023. All Right Reserved.</div>
-   </div>
+    <main>
+        <!-- <RegisterInputBoxSmall /> -->
+        <RegisterLeftSide />
+
+    </main>
 </template>
 

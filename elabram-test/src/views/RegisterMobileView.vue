@@ -10,7 +10,7 @@ export default {
         toggleVerification() {
             this.verification = !this.verification;
         }
-    },computed: {
+    }, computed: {
         isLg() {
             return window.innerWidth >= 1024;
         },
@@ -38,7 +38,7 @@ export default {
                 <p class="text-white text-md px-12 xl:px-16 text-center">Connect with your coworkers anywhere like you are
                     in one workspace. Very simple and fast.</p>
             </div>
-            
+
             <!-- RIGHT DIV AFTER VERIFICATION SMALL -->
             <div class="flex flex-col bg-white mt-24 mx-[16px] mb-12 rounded-md justify-center items-center">
                 <div class="flex flex-col justify-center items-center text-center mx-[88px] pt-[18px]">
@@ -126,7 +126,7 @@ export default {
             </div>
 
         </div> -->
-        
+
         <!-- RIGHT DIV (INPUT)-->
         <div class=" bg-gray-500 h-auto max-h-full w-11/12 lg:my-0 lg:mx-0 lg:w-2/3 lg:h-screen border border-primary-border rounded-lg lg:rounded-none container object-contain lg:relative z-50 absolute top-24"
             v-if="!this.verification">
@@ -209,7 +209,7 @@ export default {
                     </div>
                     <div class="h-1/3 flex flex-row items-center">
                         <div class="w-1/4 h-full relative transform left-1/4 -translate-x-1/2 mr-[24px]">
-                            <img src="../assets/dashed-line.png"  class="h-[80px]">
+                            <img src="../assets/dashed-line.png" class="h-[80px]">
                         </div>
                         <img src="../assets/img-2.svg" class="h-[120px]" />
                         <div class="flex flex-col">
@@ -222,14 +222,15 @@ export default {
                     <div class="h-1/3 flex flex-row items-center">
                         <div class="w-1/4"></div>
                         <div class="w-1/4 h-full relative transform left-1/4 -translate-x-1/2 mr-[24px]">
-                            <img src="../assets/dashed-line.png"  class="h-[80px]">
+                            <img src="../assets/dashed-line.png" class="h-[80px]">
                         </div>
                         <img src="../assets/img-3.svg" class="h-[120px]" />
                         <div class="flex flex-col">
                             <span class="text-left ml-2">Setup your data</span>
-                            <span class="text-left ml-2 font-normal text-sm">Input your employee data and get the ease of managing employee</span>
+                            <span class="text-left ml-2 font-normal text-sm">Input your employee data and get the ease of
+                                managing employee</span>
                         </div>
-                        
+
                     </div>
                 </div>
                 <button class="bg-primary-orange hover:bg-orange-800 text-white rounded-md h-10 w-24 my-2 self-center">

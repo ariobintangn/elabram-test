@@ -22,6 +22,8 @@ module.exports = {
     './src/components/EmployeeStatsTaskProgress.vue',
     './src/components/EmployeeStatsTaskCompletionInAllProject.vue',
     './src/components/EmployeeStatsLeaveRecap.vue',
+    './src/components/RegisterInputBoxSmall.vue',
+    './src/components/RegisterLeftSide.vue',
   ],
   theme: {
     extend: {
