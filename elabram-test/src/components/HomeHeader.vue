@@ -1,4 +1,6 @@
 <script>
+import { useRoute } from 'vue-router';
+
 export default {
     data() {
         return {
@@ -9,10 +11,22 @@ export default {
     methods: {
         toggleDropdown() {
             this.isDropdownOpen = !this.isDropdownOpen;
-        }, checkScreenSize() {
+        }, 
+        checkScreenSize() {
             this.isLargeScreen = window.innerWidth >= 1024;
+        },
+        currentLink: (currentRoute) => {
+            const route = useRoute();
+            let className = 'text-lg mx-2 cursor-pointer'
+            if (currentRoute !== route.name) {
+                className += ' text-primary-gray-3'
+            } else {
+                className += ' font-bold'
+            }
+            return className
         }
-    }, mounted() {
+    }, 
+    mounted() {
         this.checkScreenSize(); // Initial check
 
         window.addEventListener('resize', this.checkScreenSize);
@@ -50,12 +64,16 @@ export default {
     <nav class=" h-[70px] flex items-center justify-between px-[16px]" v-if="isLargeScreen">
         <img src="../assets/home/axdif-icon-square-white.svg" />
         <div class="flex flex-row w-7/12">
-            <h1 class="text-lg mx-2 font-bold">Overview</h1>
-            <h1 class="text-lg mx-2 text-primary-gray-3 ">Employee Stats</h1>
-            <h1 class="text-lg mx-2 text-primary-gray-3">Submission</h1>
-            <h1 class="text-lg mx-2 text-primary-gray-3">Task</h1>
-            <h1 class="text-lg mx-2 text-primary-gray-3">Chat</h1>
-            <h1 class="text-lg mx-2 text-primary-gray-3">Payroll</h1>
+            <router-link to="/">
+                <h1 :class="currentLink('home')">Overview</h1>
+            </router-link> 
+            <router-link to="/employee-stats">
+                <h1 :class="currentLink('employee-stats')">Employee Stats</h1>
+            </router-link>
+            <h1 class="text-lg mx-2 text-primary-gray-3 cursor-pointer">Submission</h1>
+            <h1 class="text-lg mx-2 text-primary-gray-3 cursor-pointer">Task</h1>
+            <h1 class="text-lg mx-2 text-primary-gray-3 cursor-pointer">Chat</h1>
+            <h1 class="text-lg mx-2 text-primary-gray-3 cursor-pointer">Payroll</h1>
         </div>
         <div class="w-1/4">
 
