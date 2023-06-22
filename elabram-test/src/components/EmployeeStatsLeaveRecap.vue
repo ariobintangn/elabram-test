@@ -1,6 +1,74 @@
 <script>
 export default {
-
+    data() {
+        return {
+            tableHeader: [
+                "Leave Code",
+                "Requested On",
+                "Leave Type",
+                "Start Date",
+                "End Date",
+                "Duration",
+                "Day Type"
+            ],
+            tableData: [
+                {
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Requested On": 'Mon, 02 Jan 2023',
+                    "Leave Type": 'Annual Leave',
+                    "Start Date": 'Tue, 03 Jan 2023',
+                    "End Date": 'Tue, 03 Jan 2023',
+                    "Duration": '1 Day(s)',
+                    "Day Type": 'Full Day',
+                },
+                {
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Requested On": 'Mon, 02 Jan 2023',
+                    "Leave Type": 'Compassionate Leave (Imm. Family)',
+                    "Start Date": 'Tue, 10 Jan 2023',
+                    "End Date": 'Wed, 11 Jan 2023',
+                    "Duration": '2 Day(s)',
+                    "Day Type": 'Full Day',
+                },
+                {
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Requested On": 'Mon, 02 Jan 2023',
+                    "Leave Type": 'Annual Leave',
+                    "Start Date": 'Tue, 03 Jan 2023',
+                    "End Date": 'Tue, 03 Jan 2023',
+                    "Duration": '1 Day(s)',
+                    "Day Type": 'Full Day',
+                },
+                {
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Requested On": 'Mon, 02 Jan 2023',
+                    "Leave Type": 'Compassionate Leave (Imm. Family)',
+                    "Start Date": 'Tue, 10 Jan 2023',
+                    "End Date": 'Wed, 11 Jan 2023',
+                    "Duration": '2 Day(s)',
+                    "Day Type": 'Full Day',
+                },
+                {
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Requested On": 'Mon, 02 Jan 2023',
+                    "Leave Type": 'Annual Leave',
+                    "Start Date": 'Tue, 03 Jan 2023',
+                    "End Date": 'Tue, 03 Jan 2023',
+                    "Duration": '1 Day(s)',
+                    "Day Type": 'Full Day',
+                },
+                {
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Requested On": 'Mon, 02 Jan 2023',
+                    "Leave Type": 'Compassionate Leave (Imm. Family)',
+                    "Start Date": 'Tue, 10 Jan 2023',
+                    "End Date": 'Wed, 11 Jan 2023',
+                    "Duration": '2 Day(s)',
+                    "Day Type": 'Full Day',
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -9,71 +77,30 @@ export default {
         <div class="w-full flex justify-between items-center pb-4">
             <h1 class="font-bold text-primary-gray-4">Leave Recap</h1>
         </div>
-        <div class="container">
-            <table class="table-auto overflow-x-scroll">
-                <thead>
-                    <tr class="flex flex-row bg-table-head overflow-scroll">
-                        <th class="flex flex-row"><span>
-                                Leave Code
-                            </span>
-                            <img src="../assets//home/Sort By.svg" class="ml-3">
-                        </th>
-                        <th class="flex flex-row">Requested On
-                            <img src="../assets//home/Sort By.svg" class="ml-3">
-                        </th>
-                        <div class="hidden">
-                            <th class="flex flex-row">Leave Type
-                                <img src="../assets//home/Sort By.svg" class="ml-3">
-                            </th>
-                            <th class="flex flex-row">Start Date
-                                <img src="../assets//home/Sort By.svg" class="ml-3">
-                            </th>
-                            <th class="flex flex-row">End Date
-                                <img src="../assets//home/Sort By.svg" class="ml-3">
-                            </th>
-                            <th class="flex flex-row">Duration
-                                <img src="../assets//home/Sort By.svg" class="ml-3">
-                            </th>
-                            <th class="flex flex-row">Day
-                                <img src="../assets//home/Sort By.svg" class="ml-3">
-                            </th>
-                        </div>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>The Sliding Mr</td>
-                        <td>Malcolm Lockyer</td>
-                    </tr>
-                    <tr>
-                        <td>Witchy Woman</td>
-                        <td>The Eagles</td>
-                    </tr>
-                    <tr>
-                        <td>The Sliding Mr</td>
-                        <td>Malcolm Lockyer</td>
-                    </tr>
-                    <tr>
-                        <td>Witchy Woman</td>
-                        <td>The Eagles</td>
-                    </tr>
-                    <tr>
-                        <td>The Sliding Mr</td>
-                        <td>Malcolm Lockyer</td>
-                    </tr>
-                    <tr>
-                        <td>Witchy Woman</td>
-                        <td>The Eagles</td>
-                    </tr>
-                    <tr>
-                        <td>The Sliding Mr</td>
-                        <td>Malcolm Lockyer</td>
-                    </tr>
-                    <tr>
-                        <td>Witchy Woman</td>
-                        <td>The Eagles</td>
-                    </tr>
-                </tbody>
+        <div class="container overflow-auto">
+            <table class="w-full text-md text-left whitespace-nowrap">
+                <tr class="bg-table-head font-bold">
+                    <th 
+                        v-for="(header, index) in tableHeader"
+                        :key="index"
+                        class="p-4"
+                    >
+                    {{ header }}
+                    </th>
+                </tr>
+                <tr 
+                    v-for="(data, index) in tableData"
+                    :key="index"
+                    class=""
+                >
+                    <td
+                        v-for="(header, index) in tableHeader"
+                        :key="index"
+                        class="px-4 py-2 text-table-data font-light text-sm"
+                    >
+                        {{ data[header] }}
+                    </td>
+                </tr>
             </table>
         </div>
 
