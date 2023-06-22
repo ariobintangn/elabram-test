@@ -6,8 +6,8 @@ export default {
 <template>
     <div class="flex flex-col lg:flex-row lg:justify-between">
         <h1 class="mb-[15px] font-bold text-lg">Employee Summary</h1>
-        <div class="flex flex-row h-[30px] items-center justify-between text-center">
-            <h1 class="w-[41px] lg:w-[80px] text-[12px]">Display Data in</h1>
+        <div class="flex flex-row h-[30px] items-center justify-between md:justify-end text-center gap-2">
+            <h1 class="whitespace-nowrap text-[12px]">Display Data in</h1>
             <div class="flex flex-row">
 
                 <button
