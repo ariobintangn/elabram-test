@@ -66,7 +66,6 @@ export default {
             </div>
         </div>
 
-        <!-- RIGHT DIV 2-->
 
 
         <!-- RIGHT DIV -->
@@ -129,7 +128,7 @@ export default {
         </div> -->
         
         <!-- RIGHT DIV (INPUT)-->
-        <div class=" bg-gray-500 h-auto max-h-full w-11/12 lg:my-0 lg:mx-0 lg:w-2/3 lg:h-screen border border-primary-border rounded-lg lg:rounded-none container object-contain lg:relative z-50"
+        <div class=" bg-gray-500 h-auto max-h-full w-11/12 lg:my-0 lg:mx-0 lg:w-2/3 lg:h-screen border border-primary-border rounded-lg lg:rounded-none container object-contain lg:relative z-50 absolute top-24"
             v-if="!this.verification">
 
             <div class="flex flex-col p-2 lg:p-12 2xl:p-36 relative top-1/2 transform lg:-translate-y-1/2">
