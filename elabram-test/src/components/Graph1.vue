@@ -38,7 +38,7 @@ onMounted(() => {
 
 <template>
     <div>
-        <h1 id="myChart">GRAPH 1</h1>
+        <h1 id="myChart"></h1>
     </div>
 </template>
 
