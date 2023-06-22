@@ -85,11 +85,13 @@ export default {
                             Submit
                         </button>
                     </div>
-                </div>
 
+                </div>
             </div>
-            <div class="text-white text-sm w-full text-center py-[60px]">© Copyright 2023. All Right Reserved.</div>
-        </div>
+            
+
+        
+        <div class="text-white text-sm w-full text-center py-[60px]">© Copyright 2023. All Right Reserved.</div>
     </div>
-</template>
+</div></template>
 

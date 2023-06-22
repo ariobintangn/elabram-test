@@ -1,6 +1,23 @@
 <script>
+import RegisterVerificationBoxLarge from './RegisterVerificationBoxLarge.vue';
 export default {
-
+    components: {
+        RegisterVerificationBoxLarge,
+    },
+    data() {
+        return {
+            verification: false
+        };
+    },
+    methods: {
+        toggleVerification() {
+            this.verification = !this.verification;
+        }
+    }, computed: {
+        isLg() {
+            return window.innerWidth >= 1024;
+        },
+    },
 }
 </script>
 
@@ -14,9 +31,9 @@ export default {
             </div>
         </div>
         <div>
-
-            <div class="w-2/3">
-                <img src="../assets/axdif-logo.svg" class="w-[200px] pt-[141px] mx-[100px] mb-[62px]">
+            <RegisterVerificationBoxLarge v-if="verification"/>
+            <div class="w-2/3" v-if="!verification">
+                            <img src="../assets/axdif-logo.svg" class="w-[200px] pt-[141px] mx-[100px] mb-[62px]">
                 <div class="h-[796px] bg-white  mx-[100px] py-[28px] rounded-lg lg:rounded-none">
                     <h1 class="font-bold text-xl mb-[12px]">Manage all your employee efficiently</h1>
                     <h1 class="text-sm mb-[24px]">Let’s get you all set up so you can verify your personal account and begin

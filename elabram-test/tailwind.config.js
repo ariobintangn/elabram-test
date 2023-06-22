@@ -24,6 +24,7 @@ module.exports = {
     './src/components/EmployeeStatsLeaveRecap.vue',
     './src/components/RegisterInputBoxSmall.vue',
     './src/components/RegisterLarge.vue',
+    './src/components/RegisterVerificationBoxLarge.vue',
   ],
   theme: {
     extend: {

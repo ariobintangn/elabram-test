@@ -25,8 +25,8 @@ export default {
 
 <template>
     <main>
-        <!-- <RegisterInputBoxSmall /> -->
-        <RegisterLarge />
+        <RegisterInputBoxSmall v-if="!isLg" />
+        <RegisterLarge v-if="isLg"/>
 
     </main>
 </template>
