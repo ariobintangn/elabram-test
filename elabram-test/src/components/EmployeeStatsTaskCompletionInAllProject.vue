@@ -16,13 +16,17 @@ export default {
                         data: [40, 20, 12, 10, 89, 12, 77, 11, 67, 65, 86, 10],
                         label: 'Label 1',
                         backgroundColor: 'rgba(7, 150, 229, 0.3)',
-                        fill: true
+                        fill: true,
+                        cubicInterpolationMode: 'monotone',
+                        tension: 0.9
                     },
                     { 
                         data: [20, 40, 22, 90, 71, 45, 23, 12, 42, 72, 65, 10],
                         label: 'Label 2',
                         backgroundColor: 'rgba(255, 152, 0, 0.3)',
-                        fill: true
+                        fill: true,
+                        cubicInterpolationMode: 'monotone',
+                        tension: 0.9
                     }
                 ]
             },
