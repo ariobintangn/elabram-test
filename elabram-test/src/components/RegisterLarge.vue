@@ -26,21 +26,21 @@ export default {
                         :space-between="50"
                     >
                         <swiper-slide>
-                            <img src="/src/assets/illustration-1.svg" />
+                            <img src="/src/assets/illustration-1.svg" class="mb-6" />
                             <div class="text-white text-center">
                                 <p class="text-2xl font-bold mb-3">Manage Task Easily & Efficiently</p>
                                 <p class="text-sm">Increase employee productivity and performance in a measurable and precision system in one application.</p>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
-                            <img src="/src/assets/illustration-2.svg" />
+                            <img src="/src/assets/illustration-2.svg" class="mb-6" />
                             <div class="text-white text-center">
                                 <p class="text-2xl font-bold mb-3">Communication Is Key</p>
                                 <p class="text-sm">Connect with your coworkers anywhere like you are in one workspace. Very simple and fast.</p>
                             </div>
                         </swiper-slide>
                         <swiper-slide>
-                            <img src="/src/assets/illustration-3.svg" />
+                            <img src="/src/assets/illustration-3.svg" class="mb-6" />
                             <div class="text-white text-center">
                                 <p class="text-2xl font-bold mb-3">Employee Self-Service</p>
                                 <p class="text-sm">Simplify the administrative affairs of the company where you work wherever and whenever. Let’s get started with all these conveniences</p>
