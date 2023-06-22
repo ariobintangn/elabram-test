@@ -27,8 +27,8 @@ export default {
   <HomeHeader />
   <main class="p-[16px] bg-primary-gray-2">
     <EmployeeStatsEmployeeSummary />
-    <div class="lg:flex lg:flex-row lg:h-[564px]">
-      <EmployeeStatsAttendanceSummary class="lg:w-2/3 lg:mr-3" />
+    <div class="lg:flex lg:flex-row lg:h-[564px] w-full">
+      <EmployeeStatsAttendanceSummary class="lg:w-2/3 lg:mr-3 flex-grow" />
       <EmployeeStatsAttendanceCompleteness />
     </div>
     <div class="lg:flex lg:flex-row lg:h-[564px]">

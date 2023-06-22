@@ -57,6 +57,7 @@ module.exports = {
         'yellow-1': "#FF980026",
         'yellow-2': "#FF9800",
         'table-head': "#EAEAEA",
+        'table-data': "#212121"
       },
       fontFamily: {
         'body': ['Open Sans', ...defaultTheme.fontFamily.sans]
