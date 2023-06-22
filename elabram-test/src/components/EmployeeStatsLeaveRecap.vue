@@ -22,8 +22,8 @@ export default {
                     "Day Type": 'Full Day',
                 },
                 {
-                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
-                    "Requested On": 'Mon, 02 Jan 2023',
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-002',
+                    "Requested On": 'Tue, 01 Jan 2023',
                     "Leave Type": 'Compassionate Leave (Imm. Family)',
                     "Start Date": 'Tue, 10 Jan 2023',
                     "End Date": 'Wed, 11 Jan 2023',
@@ -31,7 +31,7 @@ export default {
                     "Day Type": 'Full Day',
                 },
                 {
-                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-010',
                     "Requested On": 'Mon, 02 Jan 2023',
                     "Leave Type": 'Annual Leave',
                     "Start Date": 'Tue, 03 Jan 2023',
@@ -40,7 +40,7 @@ export default {
                     "Day Type": 'Full Day',
                 },
                 {
-                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-008',
                     "Requested On": 'Mon, 02 Jan 2023',
                     "Leave Type": 'Compassionate Leave (Imm. Family)',
                     "Start Date": 'Tue, 10 Jan 2023',
@@ -49,7 +49,7 @@ export default {
                     "Day Type": 'Full Day',
                 },
                 {
-                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-007',
                     "Requested On": 'Mon, 02 Jan 2023',
                     "Leave Type": 'Annual Leave',
                     "Start Date": 'Tue, 03 Jan 2023',
@@ -58,7 +58,7 @@ export default {
                     "Day Type": 'Full Day',
                 },
                 {
-                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-001',
+                    "Leave Code": 'LV-PTES-PT-CV10435-01-23-100',
                     "Requested On": 'Mon, 02 Jan 2023',
                     "Leave Type": 'Compassionate Leave (Imm. Family)',
                     "Start Date": 'Tue, 10 Jan 2023',
