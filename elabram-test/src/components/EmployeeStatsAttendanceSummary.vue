@@ -1,4 +1,10 @@
 <script>
+import { Bar } from 'vue-chartjs'
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+
+
 export default {
     data() {
         return {
@@ -23,8 +29,35 @@ export default {
                     content: '0',
                     color: 'bg-error'
                 }
-            ]
+            ],
+            chartData: {
+                labels: [ 'January', 'February', 'March', "April", "May", "June", "July", "August", "September", "November", "December" ],
+                datasets: [
+                    { 
+                        data: [40, 20, 12, 10, 89, 12, 77, 11, 67, 65, 86, 10],
+                        label: 'Label 1',
+                        backgroundColor: '#E53935',
+                    },
+                    { 
+                        data: [20, 40, 22, 90, 71, 45, 23, 12, 42, 72, 65, 10],
+                        label: 'Label 2',
+                        backgroundColor: '#0796E5',
+                    }
+                ]
+            },
+            chartOptions: {
+                responsive:true,
+                maintainAspectRatio: false,      
+                plugins: {
+                    legend: {
+                        display: false,
+                    },
+                }
+            }
         }
+    },
+    components: {
+        Bar
     }
 }
 </script>
@@ -35,8 +68,14 @@ export default {
         <div class="w-full flex justify-between items-center pb-4">
             <h1 class="font-bold text-primary-gray-4">Attendance Summary</h1>
         </div>
-        <div>
-            <img src="../assets/home/graph1.png" class="lg:h-[291px] lg:w-full">
+        <div class="w-full">
+            <!-- <img src="../assets/home/graph1.png" class="lg:h-[291px] lg:w-full"> -->
+            <Bar
+                id="chart-1"
+                :options="chartOptions"
+                :data="chartData"
+                class="h-80"
+            />
         </div>
         <div class="flex justify-center gap-2 xl:gap-7 w-full flex-wrap lg:flex-nowrap">
                 <!-- item 1 -->
