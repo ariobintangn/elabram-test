@@ -66,7 +66,22 @@ export default {
                     "Duration": '2 Day(s)',
                     "Day Type": 'Full Day',
                 }
-            ]
+            ],
+            type: 'increment'
+        }
+    },
+    methods: {
+        sortTable(header = 'Leave Code') {
+            this.tableData = this.tableData.sort((a, b) => {
+                if (a[header] < b[header]) {
+                    return this.type === 'increment' ? -1 : 1
+                } else if (a[header] > b[header]) {
+                    return this.type === 'increment' ? 1 : -1
+                } else {
+                    return 0
+                }
+            })
+            this.type = this.type === 'increment' ? 'decrement' : 'increment'
         }
     }
 }
@@ -85,7 +100,23 @@ export default {
                         :key="index"
                         class="p-4"
                     >
-                    {{ header }}
+                        <div class="flex gap-2 items-center justify-between">
+                            {{ header }}
+                            <svg 
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" 
+                                strokeWidth={1.5}
+                                stroke="currentColor"
+                                class="h-5 w-5 cursor-pointer"
+                                @click="sortTable(header)"
+                            >
+                                <path 
+                                    strokeLinecap="round" 
+                                    strokeLinejoin="round" 
+                                    d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" 
+                                />
+                            </svg>
+                        </div>
                     </th>
                 </tr>
                 <tr 
