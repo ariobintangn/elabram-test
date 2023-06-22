@@ -26,7 +26,7 @@ export default {
         class="h-[398px] p-[16px] my-[16px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
         <div class="w-full flex justify-between items-center pb-4 border-b border-primary-border">
             <h1 class="font-bold">Summary</h1>
-            <h1 class="text-sm  text-right mr-2 w-full">Periode</h1>
+            <h1 class="text-sm  text-right mr-2 w-full" v-if="isLargeScreen">Periode</h1>
             <div
                 class="h-[48px] w-[150px] p-[12px] bg-white flex flex-row justify-between items-center border border-primary-border shadow-sm rounded-md font-bold">
                 

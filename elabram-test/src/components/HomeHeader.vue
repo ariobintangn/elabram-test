@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-    <nav class=" h-[70px] flex items-center justify-between px-[16px]" v-if="isLargeScreen">
+    <nav class=" h-[70px] flex items-center justify-between px-[16px]" v-if="!isLargeScreen">
         <img src="../assets/home/axdif-icon-square-white.svg" />
         <div class="flex flex-row font-bold" @click="toggleDropdown">
             <h1>Overview</h1>
