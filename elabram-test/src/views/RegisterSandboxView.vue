@@ -25,9 +25,8 @@ export default {
 
 <template>
     <main>
-        <RegisterInputBoxSmall v-if="!isLg" />
-        <RegisterLarge v-if="isLg"/>
-
+        <RegisterInputBoxSmall />
+        <RegisterLarge class="hidden lg:flex" />
     </main>
 </template>
 
