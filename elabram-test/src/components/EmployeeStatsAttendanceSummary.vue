@@ -1,6 +1,31 @@
 <script>
 export default {
-
+    data() {
+        return {
+            cards: [
+                {
+                    header: 'Total Working Days',
+                    content: '237',
+                    color: 'bg-primary-350'
+                },
+                {
+                    header: 'Actual Working Hours',
+                    content: '2126 hr 14 min',
+                    color: 'bg-primary-350'
+                },
+                {
+                    header: 'Total Working Hours',
+                    content: '2930 hr 26 min',
+                    color: 'bg-primary-350'
+                },
+                {
+                    header: 'Total Late Coming',
+                    content: '0',
+                    color: 'bg-error'
+                }
+            ]
+        }
+    }
 }
 </script>
 
@@ -13,47 +38,21 @@ export default {
         <div>
             <img src="../assets/home/graph1.png" class="lg:h-[291px] lg:w-full">
         </div>
-        <div class="flex flex-row justfify-between">
-            <div class="mr-[5.5px]">
+        <div class="flex justify-center gap-2 xl:gap-7 w-full flex-wrap lg:flex-nowrap">
+                <!-- item 1 -->
                 <div
-                    class="h-[91px] w-[150px] p-[12px] my-[12px] bg-white flex flex-row items-left border border-primary-border shadow-sm rounded-md relative">
-                    <div class="bg-primary-600 w-[5px] h-full absolute top-0 left-0  rounded-l-md"></div>
+                    class="h-[91px] w-[150px] p-[12px] my-[12px] bg-white flex flex-row items-left border border-primary-border shadow-sm rounded-md relative lg:h-[107px] lg:w-[252px] xl:p-[26px] whitespace-nowrap"
+                    v-for="(card, index) in cards"
+                    :key="index"
+                >
+                    <div class="w-[5px] h-full absolute top-0 left-0  rounded-l-md" :class="card.color"></div>
                     <div class="flex flex-col justify-between ">
-                        <h1 class="text-primary-gray-3 text-xs mb-[12px] pr-[12px]">Total Working Days</h1>
-                        <h1 class="text-black font-bold">237 Day(s)</h1>
+                        <h1 class="text-primary-gray-3 text-xs mb-[12px] lg:pr-[12px]">{{ card.header }}</h1>
+                        <h1 class="text-black font-bold">{{ card.content }}</h1>
                     </div>
                     <img src="../assets/home/Info.svg" alt="info svg" class="h-[14px]">
                 </div>
-                <div
-                    class="h-[91px] w-[150px] p-[12px] my-[12px] bg-white flex flex-row items-left border border-primary-border shadow-sm rounded-md relative">
-                    <div class="bg-primary-250 w-[5px] h-full absolute top-0 left-0  rounded-l-md"></div>
-                    <div class="flex flex-col justify-between ">
-                        <h1 class="text-primary-gray-3 text-xs mb-[12px] pr-[12px]">Total Working Days</h1>
-                        <h1 class="text-black font-bold">237 Day(s)</h1>
-                    </div>
-                    <img src="../assets/home/Info.svg" alt="info svg" class="h-[14px]">
-                </div>
-            </div>
-            <div class="ml-[5.5px]">
-                <div
-                    class="h-[91px] w-[150px] p-[12px] my-[12px] bg-white flex flex-row items-left border border-primary-border shadow-sm rounded-md relative">
-                    <div class="bg-primary-350 w-[5px] h-full absolute top-0 left-0  rounded-l-md"></div>
-                    <div class="flex flex-col justify-between ">
-                        <h1 class="text-primary-gray-3 text-xs mb-[12px] pr-[12px]">Total Working Days</h1>
-                        <h1 class="text-black font-bold">237 Day(s)</h1>
-                    </div>
-                    <img src="../assets/home/Info.svg" alt="info svg" class="h-[14px]">
-                </div>
-                <div
-                    class="h-[91px] w-[150px] p-[12px] my-[12px] bg-white flex flex-row items-left border border-primary-border shadow-sm rounded-md relative">
-                    <div class="bg-error w-[5px] h-full absolute top-0 left-0  rounded-l-md"></div>
-                    <div class="flex flex-col justify-between ">
-                        <h1 class="text-primary-gray-3 text-xs mb-[12px] pr-[12px]">Total Working Days</h1>
-                        <h1 class="text-black font-bold">237 Day(s)</h1>
-                    </div>
-                    <img src="../assets/home/Info.svg" alt="info svg" class="h-[14px]">
-                </div>
-            </div>
+
         </div>
     </div>
 </template>
