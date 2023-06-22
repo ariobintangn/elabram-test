@@ -1,6 +1,39 @@
 <script>
-export default {
+import { Pie } from 'vue-chartjs'
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
 
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
+
+export default {
+    components: {
+        Pie
+    },
+    data() {
+        return {
+            chartData: {
+                labels: [ 'Complete', 'Not Complete' ],
+                datasets: [
+                    { 
+                        data: [40, 20],
+                        // label: 'Label 1',
+                        backgroundColor: [
+                            "#0796E5",
+                            "#E53935"
+                        ],
+                    }
+                ]
+            },
+            chartOptions: {
+                responsive:true,
+                maintainAspectRatio: false,      
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                }
+            }
+        }
+    }
 }
 </script>
 
@@ -11,7 +44,12 @@ export default {
             <h1 class="font-bold text-primary-gray-4">Attendance Completeness</h1>
         </div>
         <div>
-            <img src="../assets/home/graph2.png" alt="">
+            <!-- <img src="../assets/home/graph2.png" alt=""> -->
+            <Pie 
+                id="chart-2"
+                :options="chartOptions"
+                :data="chartData"
+            />
         </div>
         
     </div>
