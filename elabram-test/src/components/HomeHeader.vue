@@ -47,10 +47,14 @@ export default {
             <div v-if="isDropdownOpen" class="absolute translate-y-4 bg-primary-gray-2 rounded-md shadow-lg mt-2">
                 <ul>
                     <li>
-                        <a href="#">Overview</a>
+                        <router-link to="/">
+                            <a href="#">Overview</a>
+                        </router-link>
                     </li>
                     <li>
-                        <a href="#">Employee Stats</a>
+                        <router-link to="/employee-stats">
+                            <a href="#">Employee Stats</a>
+                        </router-link>
                     </li>
                 </ul>
             </div>

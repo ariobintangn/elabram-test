@@ -65,8 +65,8 @@ export default {
             </div>
         </div>
 
-        <div>
-            <RegisterVerificationBoxLarge v-if="verification"/>
+        
+            <RegisterVerificationBoxLarge v-if="verification" class="w-2/3"/>
             <div class="w-2/3" v-if="!verification">
                             <img src="../assets/axdif-logo.svg" class="w-[200px] pt-[141px] mx-[100px] mb-[62px]">
                 <div class="h-[796px] bg-white  mx-[100px] py-[28px] rounded-lg lg:rounded-none">
@@ -135,6 +135,6 @@ export default {
                 </div>
                 <div class="ml-[100px]">© Copyright 2023. All Right Reserved.</div>
             </div>
-        </div>
+        
     </div>
 </template>
