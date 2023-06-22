@@ -1,6 +1,15 @@
 <script>
-export default {
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
 
+// Import Swiper styles
+import 'swiper/css';
+
+export default {
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
 }
 </script>
 
@@ -8,11 +17,40 @@ export default {
     <div class="h-full flex flex-row">
         <div class="bg-primary-600 h-full w-1/3">
             <div class="bg-[url('/src/assets/masking.svg')] bg-no-repeat bg-cover h-full">
-                <div class="mx-[16px] pt-[153px] pb-[29px] text-3xl font-bold text-white text-center">A few clicks away from
-                    being a
-                    part of Axdif</div>
+                <div class="mx-[16px] pt-[153px] pb-[29px] text-3xl font-bold text-white text-center">
+                    A few clicks away from being a part of Axdif
+                </div>
+                <div class="py-2 px-6">
+                    <swiper
+                        :slides-per-view="1"
+                        :space-between="50"
+                    >
+                        <swiper-slide>
+                            <img src="/src/assets/illustration-1.svg" />
+                            <div class="text-white text-center">
+                                <p class="text-2xl font-bold mb-3">Manage Task Easily & Efficiently</p>
+                                <p class="text-sm">Increase employee productivity and performance in a measurable and precision system in one application.</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="/src/assets/illustration-2.svg" />
+                            <div class="text-white text-center">
+                                <p class="text-2xl font-bold mb-3">Communication Is Key</p>
+                                <p class="text-sm">Connect with your coworkers anywhere like you are in one workspace. Very simple and fast.</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <img src="/src/assets/illustration-3.svg" />
+                            <div class="text-white text-center">
+                                <p class="text-2xl font-bold mb-3">Employee Self-Service</p>
+                                <p class="text-sm">Simplify the administrative affairs of the company where you work wherever and whenever. Let’s get started with all these conveniences</p>
+                            </div>
+                        </swiper-slide>
+                    </swiper>
+                </div>
             </div>
         </div>
+
         <div>
 
             <div class="w-2/3">
