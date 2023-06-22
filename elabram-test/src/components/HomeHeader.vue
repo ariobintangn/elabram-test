@@ -1,20 +1,31 @@
 <script>
 export default {
-  data() {
-    return {
-      isDropdownOpen: false,
-    };
-  },
-  methods: {
-    toggleDropdown() {
-      this.isDropdownOpen = !this.isDropdownOpen;
+    data() {
+        return {
+            isDropdownOpen: false,
+            isLargeScreen: false
+        };
     },
-  },
+    methods: {
+        toggleDropdown() {
+            this.isDropdownOpen = !this.isDropdownOpen;
+        }, checkScreenSize() {
+            this.isLargeScreen = window.innerWidth >= 1024;
+        }
+    }, mounted() {
+        this.checkScreenSize(); // Initial check
+
+        window.addEventListener('resize', this.checkScreenSize);
+    },
+    beforeUnmount() {
+        window.removeEventListener('resize', this.checkScreenSize);
+    },
+
 };
 </script>
 
 <template>
-    <nav class=" h-[70px] flex items-center justify-between px-[16px]">
+    <nav class=" h-[70px] flex items-center justify-between px-[16px]" v-if="isLargeScreen">
         <img src="../assets/home/axdif-icon-square-white.svg" />
         <div class="flex flex-row font-bold" @click="toggleDropdown">
             <h1>Overview</h1>
@@ -29,6 +40,25 @@ export default {
                     </li>
                 </ul>
             </div>
+        </div>
+        <div>
+            <img src="../assets/home/Profile Picture.png" class="h-[40px]" />
+        </div>
+
+    </nav>
+
+    <nav class=" h-[70px] flex items-center justify-between px-[16px]" v-if="isLargeScreen">
+        <img src="../assets/home/axdif-icon-square-white.svg" />
+        <div class="flex flex-row w-7/12">
+            <h1 class="text-lg mx-2 font-bold">Overview</h1>
+            <h1 class="text-lg mx-2 text-primary-gray-3 ">Employee Stats</h1>
+            <h1 class="text-lg mx-2 text-primary-gray-3">Submission</h1>
+            <h1 class="text-lg mx-2 text-primary-gray-3">Task</h1>
+            <h1 class="text-lg mx-2 text-primary-gray-3">Chat</h1>
+            <h1 class="text-lg mx-2 text-primary-gray-3">Payroll</h1>
+        </div>
+        <div class="w-1/4">
+
         </div>
         <div>
             <img src="../assets/home/Profile Picture.png" class="h-[40px]" />

@@ -6,12 +6,12 @@ export default {
 
 <template>
     <div
-        class="h-[571px] p-[16px] my-[16px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
-        <div class="w-full flex justify-between items-center pb-4 border-b border-primary-border">
+        class="p-[16px] my-[16px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
+        <div class="w-full flex justify-between items-center pb-4">
             <h1 class="font-bold text-primary-gray-4">Attendance Summary</h1>
         </div>
         <div>
-            <img src="../assets/home/graph1.png" alt="">
+            <img src="../assets/home/graph1.png" class="lg:h-[291px] lg:w-full">
         </div>
         <div class="flex flex-row justfify-between">
             <div class="mr-[5.5px]">

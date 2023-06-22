@@ -4,11 +4,13 @@ export default {
 }
 </script>
 <template>
-    <div class="h-[374px] pb-[16px] my-[16px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
+    <div
+        class="h-[374px] pb-[16px] my-[16px] bg-white flex flex-col items-center border border-primary-border shadow-sm rounded-md">
         <img src="../assets/home/img-banner-profile.png" class="h-[100px] w-full" />
         <div>
             <img src="../assets/home/Profile Picture@2x.png" class="h-[80px] -translate-y-1/2" />
         </div>
+        
         <div class="px-[16px] flex flex-col -translate-y-[35px] w-full">
             <div class="w-full flex flex-col items-center pb-4 border-b border-primary-border">
                 <h1 class="font-bold">John Doe</h1>

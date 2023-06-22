@@ -16,6 +16,9 @@ module.exports = {
     './src/components/HomeTaskDueSoon.vue',
     './src/components/EmployeeStatsEmployeeSummary.vue',
     './src/components/EmployeeStatsAttendanceSummary.vue',
+    './src/components/EmployeeStatsTaskProgress.vue',
+    './src/components/EmployeeStatsTaskCompletionInAllProject.vue',
+    './src/components/EmployeeStatsLeaveRecap.vue',
   ],
   theme: {
     extend: {
@@ -34,6 +37,7 @@ module.exports = {
         'primary-250': '#80D2FB',
         'primary-300': '#5B6591',
         'primary-350': '#27B3F7',
+        'primary-450': '#0796E526',
         'primary-500': '#04A5F4',
         'primary-700': '#0984D1',
         'primary-900-08539a': '#08539A',
@@ -44,6 +48,10 @@ module.exports = {
         'primary-gray-2': "#F9F9F9",
         'primary-gray-3': "#808D93",
         'primary-gray-4': "#4A5056",
+        'primary-gray-5': "#809FB8",
+        'yellow-1': "#FF980026",
+        'yellow-2': "#FF9800",
+        'table-head': "#EAEAEA",
       }
     }
   },

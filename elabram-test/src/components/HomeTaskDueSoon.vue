@@ -1,6 +1,23 @@
 <script>
 export default {
+    data() {
+        return {
+            isLargeScreen: false
+        };
+    },
+    mounted() {
+        this.checkScreenSize(); // Initial check
 
+        window.addEventListener('resize', this.checkScreenSize);
+    },
+    beforeUnmount() {
+        window.removeEventListener('resize', this.checkScreenSize);
+    },
+    methods: {
+        checkScreenSize() {
+            this.isLargeScreen = window.innerWidth >= 1024;
+        }
+    }
 }
 </script>
 
@@ -15,17 +32,19 @@ export default {
                 <img src="../assets/home/search-24px (1).svg" />
             </div>
         </div>
-        <div class="flex flex-col justfify-center">
+        <div class="flex flex-col justfify-center lg:w-full">
             <div
-                class="h-[83px] w-[311px] pl-[12px] py-[8px] my-[12px] bg-white flex items-left border border-primary-border shadow-sm rounded-md">
-                <div class="flex flex-col justify-between">
-                    <div>
-                        <h1 class="text-primary-gray-3 text-xs">UI/UX Designer</h1>
+                class="h-[83px] w-[311px] lg:w-full px-[12px] py-[8px] my-[12px] flex items-left border border-primary-border shadow-sm rounded-md">
+                <div class="flex flex-col lg:flex-row justify-between lg:w-full">
+                    <div class="flex flex-col pt-[5px]">
+                        <div>
+                            <h1 class="text-primary-gray-3 text-xs">UI/UX Designer</h1>
+                        </div>
+                        <div>
+                            <h1 class="text-black text-sm">[WMS][Web][Task] Create Goals design</h1>
+                        </div>
                     </div>
-                    <div>
-                        <h1 class="text-black text-sm">[WMS][Web][Task] Create Goals design</h1>
-                    </div>
-                    <div class="flex items">
+                    <div class="flex items-center ml-2">
                         <div class="flex flex-row mr-2">
                             <img src="../assets/home/attach-1.svg"/>
                             <p class="text-primary-gray-3 text-xs">44</p>
@@ -40,15 +59,17 @@ export default {
                 </div>
             </div>
             <div
-                class="h-[83px] w-[311px] pl-[12px] py-[8px] my-[12px] bg-white flex items-left border border-primary-border shadow-sm rounded-md">
-                <div class="flex flex-col justify-between">
-                    <div>
-                        <h1 class="text-primary-gray-3 text-xs">UI/UX Designer</h1>
+                class="h-[83px] w-[311px] lg:w-full px-[12px] py-[8px] my-[12px] flex items-left border border-primary-border shadow-sm rounded-md">
+                <div class="flex flex-col lg:flex-row justify-between lg:w-full">
+                    <div class="flex flex-col pt-[5px]">
+                        <div>
+                            <h1 class="text-primary-gray-3 text-xs">UI/UX Designer</h1>
+                        </div>
+                        <div>
+                            <h1 class="text-black text-sm">[WMS][Web][Task] Create Goals design</h1>
+                        </div>
                     </div>
-                    <div>
-                        <h1 class="text-black text-sm">[WMS][Chat] Improve design</h1>
-                    </div>
-                    <div class="flex items">
+                    <div class="flex items-center ml-2">
                         <div class="flex flex-row mr-2">
                             <img src="../assets/home/attach-1.svg"/>
                             <p class="text-primary-gray-3 text-xs">44</p>
@@ -63,15 +84,17 @@ export default {
                 </div>
             </div>
             <div
-                class="h-[83px] w-[311px] pl-[12px] py-[8px] my-[12px] bg-white flex items-left border border-primary-border shadow-sm rounded-md">
-                <div class="flex flex-col justify-between">
-                    <div>
-                        <h1 class="text-primary-gray-3 text-xs">UI/UX Designer</h1>
+                class="h-[83px] w-[311px] lg:w-full px-[12px] py-[8px] my-[12px] flex items-left border border-primary-border shadow-sm rounded-md">
+                <div class="flex flex-col lg:flex-row justify-between lg:w-full">
+                    <div class="flex flex-col pt-[5px]">
+                        <div>
+                            <h1 class="text-primary-gray-3 text-xs">UI/UX Designer</h1>
+                        </div>
+                        <div>
+                            <h1 class="text-black text-sm">[WMS][Web][Task] Create Goals design</h1>
+                        </div>
                     </div>
-                    <div>
-                        <h1 class="text-black text-sm">[WMS][Chat] Improve design</h1>
-                    </div>
-                    <div class="flex items">
+                    <div class="flex items-center ml-2">
                         <div class="flex flex-row mr-2">
                             <img src="../assets/home/attach-1.svg"/>
                             <p class="text-primary-gray-3 text-xs">44</p>
