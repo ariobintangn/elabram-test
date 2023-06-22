@@ -1,10 +1,10 @@
 <script>
 import RegisterInputBoxSmall from '../components/RegisterInputBoxSmall.vue'
-import RegisterLeftSide from '../components/RegisterLeftSide.vue'
+import RegisterLarge from '../components/RegisterLarge.vue'
 export default {
     components: {
         RegisterInputBoxSmall,
-        RegisterLeftSide,
+        RegisterLarge,
     },
     data() {
         return {
@@ -26,7 +26,7 @@ export default {
 <template>
     <main>
         <!-- <RegisterInputBoxSmall /> -->
-        <RegisterLeftSide />
+        <RegisterLarge />
 
     </main>
 </template>

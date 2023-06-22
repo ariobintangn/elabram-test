@@ -23,7 +23,7 @@ module.exports = {
     './src/components/EmployeeStatsTaskCompletionInAllProject.vue',
     './src/components/EmployeeStatsLeaveRecap.vue',
     './src/components/RegisterInputBoxSmall.vue',
-    './src/components/RegisterLeftSide.vue',
+    './src/components/RegisterLarge.vue',
   ],
   theme: {
     extend: {
