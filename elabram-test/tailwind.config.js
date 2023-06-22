@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: [
     './src/App.vue',
@@ -52,6 +54,9 @@ module.exports = {
         'yellow-1': "#FF980026",
         'yellow-2': "#FF9800",
         'table-head': "#EAEAEA",
+      },
+      fontFamily: {
+        'body': ['Open Sans', ...defaultTheme.fontFamily.sans]
       }
     }
   },

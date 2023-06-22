@@ -17,7 +17,7 @@ import LoginRegisterHeader from './components/LoginRegisterHeader.vue';
     </div>
   </header> -->
   <!-- <LoginRegisterHeader /> -->
-  <main>
+  <main class="font-body">
     <RouterView class="h-screen"/>
   </main>
 </template>
