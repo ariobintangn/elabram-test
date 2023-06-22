@@ -9,6 +9,7 @@ module.exports = {
     './src/views/LoginMobileView.vue',
     './src/views/RegisterView.vue',
     './src/views/RegisterMobileView.vue',
+    './src/views/RegisterSandboxView.vue',
     './src/views/HomeEmployeeStats.vue',
     './src/components/LoginRegisterHeader.vue',
     './src/components/HomeHeader.vue',
