@@ -19,10 +19,10 @@ export default {
 </script>
 
 <template>
-    <div class="h-[70px] p-[16px]">
+    <div class="h-[70px] p-[16px] flex lg:hidden">
         <img src="../assets/axdif-logo.svg" class="h-[40px]">
     </div>
-    <div class="bg-primary-600">
+    <div class="bg-primary-600 flex lg:hidden">
         <div class="bg-[url('/src/assets/masking.svg')] bg-no-repeat bg-cover">
             <div class="mx-[16px] pt-[40px] pb-[29px] text-3xl font-bold text-white text-center">A few clicks away from
                 being a

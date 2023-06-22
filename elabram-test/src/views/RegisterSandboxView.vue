@@ -25,8 +25,8 @@ export default {
 
 <template>
     <main>
-        <!-- <RegisterInputBoxSmall /> -->
-        <RegisterLarge />
+        <RegisterInputBoxSmall />
+        <RegisterLarge class="hidden lg:flex" />
 
     </main>
 </template>
