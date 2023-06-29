@@ -29,8 +29,8 @@ export default {
 </script>
 
 <template>
-    <div class="h-screen flex flex-row">
-        <div class="bg-primary-600 h-full w-1/3">
+    <div class="h-screen flex flex-row container">
+        <div class="bg-primary-600 lg:h-[900px] w-1/3">
             <div class="bg-[url('/src/assets/masking.svg')] bg-no-repeat bg-cover h-full">
                 <div class="mx-[16px] pt-[153px] pb-[29px] text-3xl font-bold text-white text-center">
                     A few clicks away from being a part of Axdif
@@ -68,9 +68,9 @@ export default {
 
 
         <RegisterVerificationBoxLarge v-if="verification" class="w-2/3" />
-        <div class="w-2/3" v-if="!verification">
+        <div class="w-2/3 h-[796px]" v-if="!verification">
             <img src="../assets/axdif-logo.svg" class="w-[200px] pt-[141px] mx-[100px] mb-[62px]">
-            <div class="h-[796px] bg-white  mx-[100px] py-[28px] rounded-lg lg:rounded-none">
+            <div class="h-[px] bg-white  mx-[100px] py-[28px] rounded-lg lg:rounded-none">
                 <h1 class="font-bold text-xl mb-[12px]">Manage all your employee efficiently</h1>
                 <h1 class="text-sm mb-[24px]">Let’s get you all set up so you can verify your personal account and begin
                     setting

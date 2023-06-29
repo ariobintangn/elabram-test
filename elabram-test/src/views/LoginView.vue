@@ -4,7 +4,7 @@ export default {
 </script>
 
 <template>
-    <div class="flex flex-col lg:flex-row h-full">
+    <div class="flex flex-col lg:flex-row">
 
         <div class="hidden lg:block h-full lg:w-2/3 bg-primary-600 lg:relative justify-center items-center -z-20">
             <img src="../assets/masking.svg" class="absolute inset-0 bg-cover h-full bg-no-repeat -z-10" />

@@ -16,7 +16,7 @@ export default {
 
         <div
             class="h-5/6 container lg:h-full lg:my-0  lg:mx-0 lg:relative lg:w-1/3 lg:border border-primary-border lg:bg-white">
-            <div class="flex flex-col px-[16px] lg:px-[69px] relative md:p-24 lg:top-1/2 lg:transform lg:-translate-y-1/2">
+            <div class="flex flex-col px-[16px] lg:px-[69px] relative md:p-24 lg:p-0 lg:top-1/2 lg:transform lg:-translate-y-1/2">
                 <img src="../assets/axdif-logo.svg" class="lg:block w-36 lg:w-48 mb-10 mt-[24px]" />
                 <h1 class="text-xl lg:text-3xl text-primary-900 my-2"><b>Login to your Account</b></h1>
                 <h1 class="lg:text-xl text-primary-900 my-2">Hi, welcome back! Select method to login</h1>
@@ -57,9 +57,9 @@ export default {
                 <button class=" bg-primary-orange hover:bg-orange-800 text-white rounded-md h-10 w-full my-2">
 
                     <router-link to="/">Login</router-link></button>
-            </div>
-            <div class="flex justify-center w-full">
-                <a href="#" class="md:bottom-2 text-primary-300 -mt-10 mb-12">Privacy Policy • Terms & Condition</a>
+                    <div class="flex justify-center w-full mt-[40px]">
+                        <a href="#" class="md:bottom-2 text-primary-300  mb-[12px]">Privacy Policy • Terms & Condition</a>
+                    </div>
             </div>
 
             <div class="flex justify-center w-full">
